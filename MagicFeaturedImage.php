@@ -25,6 +25,8 @@ class MagicFeaturedImage {
             return;
         }
 
+        $uploaded_image = null;
+
         if ( $parent_id = wp_is_post_revision( $post_id ) ){
             $post_id = $parent_id;
         }
